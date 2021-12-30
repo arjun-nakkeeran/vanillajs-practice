@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Vanilla JS - Form Validation</title>
+        
+        <link href="style.css" rel="stylesheet" ></link>
+
+    </head>
+<body>
+    
+    <div class="form-container">
+        <h1>Register Form</h1>
+        <form id="register-form" >
+            <div class="form-control">
+            <input type="text" name="firstname" placeholder="First Name" required />
+            <small>Enter valid First name</small>
+        </div>
+        <div class="form-control">
+            <input type="text" name="lastname" placeholder="Last Name" required />
+            <small>Enter valid Last name</small>
+        </div>
+        <div class="form-control">
+            <input type="email" name="email" placeholder="Email Address" required />
+            <small>Enter valid Email</small>
+        </div>
+        <div class="form-control">
+            <input type="tel" name="Phone" placeholder="Phone Number" required />
+            <small>Enter valid Phone number</small>
+        </div>
+        <div class="form-control">
+            <button type="submit">Submit the form</button>
+            <small>Form validation succeeded</small>
+        </div>
+        </form>
+    </div>
+
+    <script type="text/javascript" src="./script.js"></script>
+
+</body>
+</html>
