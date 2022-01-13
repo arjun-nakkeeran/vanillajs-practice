@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Expense tracker</title>
+        <link href="styles.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="X-UA-Compatible" content="ie=edge">
+    </head>
+    <body>
+        <header class="title">
+        <h1>Expense Tracker</h1>
+        </header>
+        <div class="root-container" role="main">
+            <section class="flex-item">
+                <h3>Your balance</h3>
+                <span class="balance">200</span>
+                <div class="summary">
+                    <div class="flex-item flex-item-equal">
+                        <label for="income">Income: </label><span id="income">400</span>
+                    </div>
+                    <div class="flex-item flex-item-equal">
+                        <label for="expense">Expense: </label><span id="expense">400</span>
+                    </div>
+                </div>
+            </section>
+            <section class="flex-item">
+                <h3>History</h3>
+                <div class="history-container">
+                    <div class="history-row">
+                        <span>10/01/2022</span>
+                        <span>Food</span>
+                        <span>300</span>
+                    </div>
+                    <div class="history-row">
+                        <span>13/01/2022</span>
+                        <span>Food</span>
+                        <span>650</span>
+                    </div>
+                </div>
+            </section>
+            <section class="flex-item">
+                <h3>Add transaction</h3>
+                <form id="transaction">
+                    I spent Rs.
+                    <input type="number" id="amount" placeholder="Amount"> <br>
+                    for 
+                    <input type="text" id="description" placeholder="Description">
+                    on
+                    <input type="date" id="transactiondate" placeholder="Date">
+                </form>
+            </section>
+        </div>
+        <div id="clock"></div>
+
+
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
