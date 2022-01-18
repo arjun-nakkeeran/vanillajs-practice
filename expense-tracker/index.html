@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Expense tracker</title>
         <link href="styles.css" rel="stylesheet" />
@@ -26,27 +26,33 @@
             <section class="flex-item">
                 <h3>History</h3>
                 <div class="history-container">
-                    <div class="history-row">
-                        <span>10/01/2022</span>
-                        <span>Food</span>
-                        <span>300</span>
-                    </div>
-                    <div class="history-row">
-                        <span>13/01/2022</span>
-                        <span>Food</span>
-                        <span>650</span>
-                    </div>
                 </div>
             </section>
             <section class="flex-item">
                 <h3>Add transaction</h3>
                 <form id="transaction">
                     I spent Rs.
-                    <input type="number" id="amount" placeholder="Amount"> <br>
+                    <div class="form-control">
+                    <input type="number" id="amount" placeholder="Amount">
+                    <small>Enter valid Expense Amount</small>
+                </div>
+                    <br>
                     for 
+                    <div class="form-control">
                     <input type="text" id="description" placeholder="Description">
+                    <small>Enter valid Description</small>
+                </div>
+                    <br>
                     on
+                    <div class="form-control">
                     <input type="date" id="transactiondate" placeholder="Date">
+                    <small>Enter valid Transaction Date</small>
+                </div>
+                    <br>
+                    <div class="form-control">
+                    <button type="submit">Add Transaction</button>
+                    <small>Form validation succeeded</small>
+                </div>
                 </form>
             </section>
         </div>

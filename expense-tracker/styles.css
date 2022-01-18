@@ -8,6 +8,10 @@ header.title {
     justify-content: center;
 }
 
+header.title h1 {
+    margin: 0.3em auto;
+}
+
 .root-container {
     display: flex;
     flex-direction: column;
@@ -47,6 +51,8 @@ div.summary {
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid #c1ced7;
+    height: 120px;
+    overflow-y: auto;
 
 }
 
@@ -63,7 +69,12 @@ div.summary {
 }
 
 /* Transactions */
-#transaction > input {
+
+div.form-control {
+    display: inline;
+}
+
+div.form-control > input {
     border: 1px solid #c1ced7;
     border-radius: 0.25em;
     padding:0.5em;
@@ -71,6 +82,20 @@ div.summary {
 
 }
 
-#transaction > #amount {
+div.form-control > #amount {
     max-width: 6em;
+}
+
+div.form-control > small {
+    visibility: hidden;
+}
+
+div.form-control.error small {
+    visibility: visible;
+    color: red;
+}
+
+.form-control.success small {
+    visibility: visible;
+    color: darkgreen;
 }
